@@ -1,0 +1,18 @@
+site_name: My Docs
+# theme: 
+#   name: material
+nav:
+  - Home: index.md
+  - About: about.md
+  - Contact: contact.md
+  - Getting-started:  getting-started.md
+# theme: readthedocs
+plugins: 
+  - search
+  - mkdocs-with-confluence:
+      host_url:
+      space:
+      parent_page_name:
+      username:
+      password:
+      enabled_if_env: MKDOCS_TO_CONFLUENCE
