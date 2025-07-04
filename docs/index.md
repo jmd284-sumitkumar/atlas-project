@@ -1,17 +1,17 @@
-# Welcome to MkDocs
+# Welcome to Atlas
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+For full documentation visit [atlas.org](https://www.atlas.org).
 
-## Commands
+## Overview
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* `Infrastructure` - A Handbook for Infra.
+* `Git Strategy` - A Handbook on Git Strategy.
+* `Resource Naming ` - Convention of Naming Resources
 
 ## Project layout
 
-    mkdocs.yml    # The configuration file.
+    Architecture    # The Parent folder.
     docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+        Infrastructure  # The documentation of Infra.
+        Git Strategy       # The documentation of Git
+        Resource Naming     # The documentation on Naming convention.

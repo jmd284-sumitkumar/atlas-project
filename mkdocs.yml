@@ -1,18 +1,29 @@
-site_name: My Docs
-# theme: 
-#   name: material
+site_name: Atlas
+theme: 
+  name: material
+  palette:
+    - scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
 nav:
-  - Home: index.md
-  - About: about.md
-  - Contact: contact.md
-  - Getting-started:  getting-started.md
-# theme: readthedocs
+  - Network: network.md
+  - Git: git_strategy.md
+  - Playbook: playbook.md
 plugins: 
   - search
   - mkdocs-with-confluence:
       host_url: https://atlas-test-01.atlassian.net/wiki/rest/api/content
       space: SOFTWARE
-      parent_page_name: Atals-demo
+      parent_page_name: Atlas-demo
       username: sumitkumar@jmangroup.com
       enabled_if_env: MKDOCS_TO_CONFLUENCE
       dryrun: false
