@@ -1,6 +1,6 @@
 # Contact
 
-Have questions or feedback? Reach out to us:
+Have questions or feedbacks? Reach out to us:
 
 - 📧 Email: support@example.com
 - 🐙 GitHub: [github.com/your-org](https://github.com/your-org)
