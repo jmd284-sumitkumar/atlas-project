@@ -10,9 +10,8 @@ nav:
 plugins: 
   - search
   - mkdocs-with-confluence:
-      host_url:
-      space:
-      parent_page_name:
-      username:
-      password:
+      host_url: https://atlas-test-01.atlassian.net/wiki
+      space: SOFTWARE
+      parent_page_name: Atals-demo
+      username: sumitkumar@jmangroup.com
       enabled_if_env: MKDOCS_TO_CONFLUENCE
