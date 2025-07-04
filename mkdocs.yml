@@ -18,6 +18,7 @@ nav:
   - Network: network.md
   - Git: git_strategy.md
   - Playbook: playbook.md
+  - Orchestration: orschestration.md
 plugins: 
   - search
   - mkdocs-with-confluence:
