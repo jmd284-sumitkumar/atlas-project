@@ -15,3 +15,6 @@ plugins:
       parent_page_name: Atals-demo
       username: sumitkumar@jmangroup.com
       enabled_if_env: MKDOCS_TO_CONFLUENCE
+      dryrun: false
+      verbose: true
+      debug: true

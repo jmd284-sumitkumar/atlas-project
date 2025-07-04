@@ -4,6 +4,10 @@ on:
     push:
         branches:
             - main
+
+permissions:
+  contents: write 
+
 jobs:
     publish:
         runs-on: ubuntu-latest
@@ -14,10 +18,17 @@ jobs:
             CONFLUENCE_API_TOKEN: ${{secrets.CONFLUENCE_API_TOKEN}}
         
         steps:
-            - uses: actions/checkout@v3
-            - uses: actions/setup-python@v4
-              with:
-                python-version: '3.x'
-            - run: |
-                pip install mkdocs mkdocs-with-confluence
-                mkdocs build
+        - name: Checkout code
+          uses: actions/checkout@v3
+
+        - name: Set up Python
+          uses: actions/setup-python@v4
+          with:
+            python-version: '3.x'
+
+        - name: Install dependencies
+          run: |
+            python -m pip install --upgrade pip
+            pip install mkdocs mkdocs-with-confluence
+        - name: Deploy to Confluence
+          run: mkdocs build
